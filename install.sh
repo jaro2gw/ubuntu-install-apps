@@ -35,9 +35,10 @@ rm -f $STREMIO_DEB
 
 # Jetbrains Toolbox
 export JETBRAINS_TOOLBOX_VERSION="1.21.9712"
+export JETBRAINS_TOOLBOX="jetbrains-toolbox-$JETBRAINS_TOOLBOX_VERSION"
 
-wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-$JETBRAINS_TOOLBOX_VERSION.tar.gz
-tar -xvzf jetbrains-toolbox-$JETBRAINS_TOOLBOX_VERSION.tar.gz
-rm -f jetbrains-toolbox-$JETBRAINS_TOOLBOX_VERSION.tar.gz
-./jetbrains-toolbox-$JETBRAINS_TOOLBOX_VERSION/jetbrains-toolbox
-rm -r jetbrains-toolbox-$JETBRAINS_TOOLBOX_VERSION
+wget https://download.jetbrains.com/toolbox/$JETBRAINS_TOOLBOX.tar.gz
+tar -xvzf $JETBRAINS_TOOLBOX.tar.gz
+./$JETBRAINS_TOOLBOX/jetbrains-toolbox
+rm -f $JETBRAINS_TOOLBOX.tar.gz
+rm -r $JETBRAINS_TOOLBOX
