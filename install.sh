@@ -23,9 +23,8 @@ sudo apt install brave-browser
 # Streamio
 # TODO replace hardcoded version with environment variable
 export STREMIO_VERSION="4.4.137"
-export STREMIO_API="v$STREMIO_VERSION"
 export STREMIO_DEB="stremio_$STREMIO_VERSION-1_amd64.deb"
-wget https://dl.strem.io/shell-linux/$STREMIO_API/$STREMIO_DEB
+wget https://dl.strem.io/shell-linux/v$STREMIO_VERSION/$STREMIO_DEB
 # will most likely fail, this is ok
 set +e
 sudo dpkg -i $STREMIO_DEB
