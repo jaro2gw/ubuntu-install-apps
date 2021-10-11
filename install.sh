@@ -2,7 +2,7 @@
 sudo apt update
 
 # Apt installs -----------------------------------
-sudo apt install zsh git curl wget libfprint-2-tod1
+sudo apt install zsh git curl wget
 
 # Oh My ZSH --------------------------------------
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -35,16 +35,3 @@ tar -xvzf $JETBRAINS_TOOLBOX.tar.gz
 ./$JETBRAINS_TOOLBOX/jetbrains-toolbox
 rm -f $JETBRAINS_TOOLBOX.tar.gz
 rm -r $JETBRAINS_TOOLBOX
-
-# Fingerprint reader
-export GOODIX_DEB="libfprint-2-tod1-goodix_0.0.6-0ubuntu1~somerville1_amd64.deb"
-
-wget http://dell.archive.canonical.com/updates/pool/public/libf/libfprint-2-tod1-goodix/$GOODIX_DEB
-# will most likely fail, this is ok
-set +e
-sudo dpkg -i $GOODIX_DEB
-set -e
-# here we fix the dependencies
-sudo apt -f install
-sudo pam-auth-update
-rm -f $GOODIX_DEB
