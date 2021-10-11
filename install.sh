@@ -9,6 +9,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Snap installs ----------------------------------
 sudo snap install vlc discord opera
+sudo snap install slack --classic
 
 # Manual installs --------------------------------
 
