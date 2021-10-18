@@ -8,7 +8,7 @@ sudo apt install zsh git curl wget
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Snap installs ----------------------------------
-sudo snap install vlc discord opera
+sudo snap install vlc discord opera gimp krita
 sudo snap install slack sublime-text --classic
 
 # Manual installs --------------------------------
