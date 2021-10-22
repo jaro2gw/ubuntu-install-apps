@@ -2,7 +2,7 @@
 sudo apt update
 
 # Apt installs -----------------------------------
-sudo apt install zsh git curl wget
+sudo apt install zsh git curl wget python3 python3-distutils python3-apt build-essential autoconf libtool pkg-config
 
 # Oh My ZSH --------------------------------------
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
