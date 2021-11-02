@@ -9,22 +9,26 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Snap installs ----------------------------------
 sudo snap install vlc discord opera gimp krita
-sudo snap install slack sublime-text --classic
+sudo snap install --classic slack sublime-text
 
 # Manual installs --------------------------------
 
-# Streamio
-# TODO replace hardcoded version with environment variable
+# Stremio
 export STREMIO_VERSION="4.4.137"
 export STREMIO_DEB="stremio_$STREMIO_VERSION-1_amd64.deb"
 wget https://dl.strem.io/shell-linux/v$STREMIO_VERSION/$STREMIO_DEB
+
+# Minecraft
+export MINECRAFT_DEB="Minecraft.deb"
+wget https://launcher.mojang.com/download/$MINECRAFT_DEB
+
 # will most likely fail, this is ok
 set +e
-sudo dpkg -i $STREMIO_DEB
+sudo dpkg -i $STREMIO_DEB $MINECRAFT_DEB
 set -e
-# here we fix the dependencies
+# afterwards we fix the dependencies
 sudo apt -f install
-rm -f $STREMIO_DEB
+rm -f $STREMIO_DEB $MINECRAFT_DEB
 
 # Jetbrains Toolbox
 export JETBRAINS_TOOLBOX_VERSION="1.21.9712"
