@@ -8,7 +8,7 @@ sudo apt install zsh git curl wget python3 python3-distutils python3-apt python3
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Snap installs ----------------------------------
-sudo snap install vlc discord opera gimp krita
+sudo snap install vlc discord opera gimp krita spotify
 sudo snap install --classic slack sublime-text
 
 # Manual installs --------------------------------
