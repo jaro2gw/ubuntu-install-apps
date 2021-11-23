@@ -2,7 +2,7 @@
 sudo apt update
 
 # Apt installs -----------------------------------
-sudo apt install zsh git curl wget python3 python3-distutils python3-apt python3-dev build-essential autoconf libtool pkg-config inkscape gzip zenity vim neofetch
+sudo apt install zsh git curl wget python3 python3-distutils python3-apt python3-dev build-essential autoconf libtool pkg-config inkscape gzip zenity vim neofetch steam
 
 # Oh My ZSH --------------------------------------
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
