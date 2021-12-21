@@ -22,13 +22,12 @@ wget https://dl.strem.io/shell-linux/v$STREMIO_VERSION/$STREMIO_DEB
 export MINECRAFT_DEB="Minecraft.deb"
 wget https://launcher.mojang.com/download/$MINECRAFT_DEB
 
-# will most likely fail, this is ok
-set +e
-sudo dpkg -i $STREMIO_DEB $MINECRAFT_DEB
-set -e
-# afterwards we fix the dependencies
-sudo apt -f install
-rm -f $STREMIO_DEB $MINECRAFT_DEB
+# Zoom
+export ZOOM_DEB="zoom_amd64.deb"
+wget https://zoom.us/client/latest/$ZOOM_DEB
+
+sudo apt install ./$STREMIO_DEB ./$MINECRAFT_DEB ./$ZOOM_DEB
+rm -f $STREMIO_DEB $MINECRAFT_DEB $ZOOM_DEB
 
 # Jetbrains Toolbox
 export JETBRAINS_TOOLBOX_VERSION="1.21.9712"
