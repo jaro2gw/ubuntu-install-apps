@@ -1,3 +1,5 @@
+set -x
+
 # First, update apt ------------------------------
 sudo add-apt-repository universe
 sudo apt update
@@ -77,3 +79,5 @@ tar -xvzf $JETBRAINS_TOOLBOX.tar.gz
 ./$JETBRAINS_TOOLBOX/jetbrains-toolbox
 rm -f $JETBRAINS_TOOLBOX.tar.gz
 rm -r $JETBRAINS_TOOLBOX
+
+set +x
