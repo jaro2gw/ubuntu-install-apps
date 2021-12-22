@@ -1,16 +1,47 @@
 # First, update apt ------------------------------
+sudo add-apt-repository universe
 sudo apt update
 
 # Apt installs -----------------------------------
-sudo apt install zsh git curl wget python3 python3-distutils python3-apt python3-dev build-essential autoconf libtool pkg-config inkscape gzip zenity vim neofetch steam grub-customizer
+sudo apt install \
+  gnome-tweak-tool \
+  zsh \
+  git \
+  curl \
+  wget \
+  python3 \
+  python3-distutils \
+  python3-apt \
+  python3-dev \
+  build-essential \
+  autoconf \
+  libtool \
+  pkg-config \
+  inkscape \
+  gzip \
+  zenity \
+  vim \
+  neofetch \
+  steam \
+  grub-customizer \
+  
 
 # Oh My ZSH --------------------------------------
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Snap installs ----------------------------------
-sudo snap install vlc discord opera gimp krita spotify
-sudo snap install --classic slack sublime-text
-
+sudo snap install \
+  vlc \
+  discord \
+  opera \
+  gimp \
+  krita \
+  spotify \
+  
+sudo snap install --classic \
+  slack \
+  sublime-text \
+  
 # Manual installs --------------------------------
 
 # Stremio
@@ -26,8 +57,15 @@ wget https://launcher.mojang.com/download/$MINECRAFT_DEB
 export ZOOM_DEB="zoom_amd64.deb"
 wget https://zoom.us/client/latest/$ZOOM_DEB
 
-sudo apt install ./$STREMIO_DEB ./$MINECRAFT_DEB ./$ZOOM_DEB
-rm -f $STREMIO_DEB $MINECRAFT_DEB $ZOOM_DEB
+sudo apt install \
+  ./$STREMIO_DEB \
+  ./$MINECRAFT_DEB \
+  ./$ZOOM_DEB \
+  
+rm -f \
+  $STREMIO_DEB \
+  $MINECRAFT_DEB \
+  $ZOOM_DEB \
 
 # Jetbrains Toolbox
 export JETBRAINS_TOOLBOX_VERSION="1.21.9712"
