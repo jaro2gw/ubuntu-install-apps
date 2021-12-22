@@ -8,6 +8,7 @@ sudo apt update
 sudo apt install \
   gnome-tweak-tool \
   chrome-gnome-shell \
+  gnome-shell-extension-caffeine \
   zsh \
   git \
   curl \
