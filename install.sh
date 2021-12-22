@@ -6,10 +6,6 @@ sudo apt update
 
 # Apt installs -----------------------------------
 sudo apt install \
-  gnome-tweak-tool \
-  chrome-gnome-shell \
-  gnome-shell-extension-caffeine \
-  gse-sound-output-device-chooser \
   zsh \
   git \
   curl \
@@ -30,6 +26,10 @@ sudo apt install \
   steam \
   grub-customizer \
   diodon \
+  gnome-tweak-tool \
+  chrome-gnome-shell \
+  gnome-shell-extension-caffeine \
+  gnome-shell-extension-sound-output-device-chooser \
 
 # Oh My ZSH --------------------------------------
 set +x
