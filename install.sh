@@ -28,8 +28,10 @@ sudo apt install \
   diodon \
   gnome-tweak-tool \
   chrome-gnome-shell \
-  gnome-shell-extension-caffeine \
-  gnome-shell-extension-sound-output-device-chooser \
+  
+# Gnome Shell Extensions to install:
+#  caffeine
+#  sound-output-device-chooser
 
 # Oh My ZSH --------------------------------------
 set +x
