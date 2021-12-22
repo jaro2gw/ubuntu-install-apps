@@ -9,6 +9,7 @@ sudo apt install \
   gnome-tweak-tool \
   chrome-gnome-shell \
   gnome-shell-extension-caffeine \
+  gse-sound-output-device-chooser \
   zsh \
   git \
   curl \
