@@ -30,7 +30,9 @@ sudo apt install \
   
 
 # Oh My ZSH --------------------------------------
+set +x
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+set -x
 
 # Snap installs ----------------------------------
 sudo snap install \
