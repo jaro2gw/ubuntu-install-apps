@@ -8,6 +8,8 @@ sudo apt update
 sudo apt install \
   gnome-tweak-tool \
   chrome-gnome-shell \
+  libproxy1-plugin-networkmanager \
+  gnome-shell-extension-system-monitor \
   zsh \
   git \
   curl \
