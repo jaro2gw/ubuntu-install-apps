@@ -8,6 +8,7 @@ sudo apt update
 sudo apt install \
   gnome-tweak-tool \
   chrome-gnome-shell \
+  gnome-shell-extension-clipboard-indicator \
   zsh \
   git \
   curl \
@@ -27,7 +28,6 @@ sudo apt install \
   neofetch \
   steam \
   grub-customizer \
-  diodon \
 
 # Oh My ZSH --------------------------------------
 set +x
