@@ -30,8 +30,8 @@ sudo apt install \
   chrome-gnome-shell \
   
 # Gnome Shell Extensions to install:
-#  caffeine
-#  sound-output-device-chooser
+# - https://extensions.gnome.org/extension/517/caffeine/
+# - https://extensions.gnome.org/extension/906/sound-output-device-chooser/
 
 # Oh My ZSH --------------------------------------
 set +x
