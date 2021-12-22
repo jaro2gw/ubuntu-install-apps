@@ -5,6 +5,7 @@ sudo apt update
 # Apt installs -----------------------------------
 sudo apt install \
   gnome-tweak-tool \
+  chrome-gnome-shell \
   zsh \
   git \
   curl \
