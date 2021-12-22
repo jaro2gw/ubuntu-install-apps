@@ -8,8 +8,6 @@ sudo apt update
 sudo apt install \
   gnome-tweak-tool \
   chrome-gnome-shell \
-  libproxy1-plugin-networkmanager \
-  gnome-shell-extension-system-monitor \
   zsh \
   git \
   curl \
@@ -29,7 +27,7 @@ sudo apt install \
   neofetch \
   steam \
   grub-customizer \
-  
+  diodon \
 
 # Oh My ZSH --------------------------------------
 set +x
