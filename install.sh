@@ -48,6 +48,7 @@ sudo snap install \
   spotify \
   
 sudo snap install --classic \
+  node \
   slack \
   sublime-text \
   
