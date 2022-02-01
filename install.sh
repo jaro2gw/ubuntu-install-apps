@@ -48,11 +48,13 @@ sudo snap install \
   spotify \
   
 sudo snap install --classic \
-  node \
   slack \
   sublime-text \
   
 # Manual installs --------------------------------
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.zshrc
+nvm install v16.13.2
 
 # Stremio
 export STREMIO_VERSION="4.4.137"
