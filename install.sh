@@ -28,6 +28,7 @@ sudo apt install \
   diodon \
   gnome-tweak-tool \
   chrome-gnome-shell \
+  postgresql \
   
 # Gnome Shell Extensions to install:
 # - https://extensions.gnome.org/extension/517/caffeine/
