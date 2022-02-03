@@ -6,29 +6,30 @@ sudo apt update
 
 # Apt installs -----------------------------------
 sudo apt install \
-  zsh \
-  git \
+  autoconf \
+  build-essential \
+  chrome-gnome-shell \
   curl \
-  wget \
+  diodon \
+  docker-compose \
+  git \
+  gnome-tweak-tool \
+  grub-customizer \
+  gzip \
+  inkscape \
+  libtool \
+  neofetch \
+  pkg-config \
+  postgresql \
   python3 \
-  python3-distutils \
   python3-apt \
   python3-dev \
-  build-essential \
-  autoconf \
-  libtool \
-  pkg-config \
-  inkscape \
-  gzip \
-  zenity \
-  vim \
-  neofetch \
+  python3-distutils \
   steam \
-  grub-customizer \
-  diodon \
-  gnome-tweak-tool \
-  chrome-gnome-shell \
-  postgresql \
+  vim \
+  wget \
+  zenity \
+  zsh \
   
 # Gnome Shell Extensions to install:
 # - https://extensions.gnome.org/extension/517/caffeine/
@@ -41,12 +42,12 @@ set -x
 
 # Snap installs ----------------------------------
 sudo snap install \
-  vlc \
   discord \
-  opera \
   gimp \
   krita \
+  opera \
   spotify \
+  vlc \
   
 sudo snap install --classic \
   slack \
