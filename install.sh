@@ -46,6 +46,7 @@ sudo snap install \
   gimp \
   krita \
   opera \
+  postman \
   spotify \
   vlc \
   
