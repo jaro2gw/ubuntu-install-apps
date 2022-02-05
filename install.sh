@@ -51,6 +51,7 @@ sudo snap install \
   vlc \
   
 sudo snap install --classic \
+  heroku \
   slack \
   sublime-text \
   
