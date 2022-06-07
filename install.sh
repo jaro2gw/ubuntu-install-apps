@@ -1,8 +1,5 @@
 set -x
 
-sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-
 # First, update apt ------------------------------
 sudo add-apt-repository universe
 sudo apt update
@@ -24,6 +21,7 @@ sudo apt install \
   neofetch \
   pkg-config \
   postgresql \
+  postgresql-contrib \
   python3 \
   python3-apt \
   python3-dev \
@@ -33,7 +31,12 @@ sudo apt install \
   wget \
   zenity \
   zsh \
-  
+
+# Postgres
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo systemctl start postgresql.service
+
 # Gnome Shell Extensions to install:
 # - https://extensions.gnome.org/extension/517/caffeine/
 # - https://extensions.gnome.org/extension/906/sound-output-device-chooser/
